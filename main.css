@@ -14,3 +14,9 @@ h1 {
     width: 360px;
     margin: 0 auto;
 }
+
+li {
+    opacity: 1;
+    transition: opacity 400ms ;
+    -webkit-transition: opacity 1000ms ;
+}

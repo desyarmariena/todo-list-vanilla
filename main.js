@@ -4,7 +4,10 @@ var ul = document.querySelector('ul');
 ul.addEventListener('click', function(e){
     if(e.target.nodeName === 'SPAN'){
         //delete list
-        e.target.parentElement.remove();
+        e.target.parentElement.style.opacity = '0';
+        setTimeout(function(){
+            e.target.parentElement.remove();
+        }, 400);
         // console.log('span clicked');
     }
 });
