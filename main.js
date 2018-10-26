@@ -1,6 +1,14 @@
 var input = document.getElementById('input');
 var ul = document.querySelector('ul');
 
+ul.addEventListener('click', function(e){
+    if(e.target.nodeName === 'SPAN'){
+        //delete list
+        e.target.parentElement.remove();
+        // console.log('span clicked');
+    }
+});
+
 input.addEventListener('keyup', function(e){
     if(e.keyCode === 13){
         var teks = input.value;
@@ -11,10 +19,3 @@ input.addEventListener('keyup', function(e){
         input.value = '';
     }
 });
-
-var lists = document.querySelectorAll('span');
-
-lists.forEach(list => list.addEventListener('click', function(e){
-    // console.log(this.parentElement);
-    this.parentElement.remove();
-}));
