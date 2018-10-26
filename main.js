@@ -1,0 +1,1 @@
+// var tes = document.getElementsByTagName('span');
