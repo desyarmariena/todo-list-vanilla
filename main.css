@@ -3,7 +3,7 @@
     margin: 0;
     font-size: 16px;
     list-style: none;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 body {
@@ -27,12 +27,12 @@ h1 {
 }
 
 #container {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;    
     width: 400px;
     margin: 100px auto;
     background: #f7f7f7;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;    
 }
 
 li {
@@ -61,4 +61,19 @@ input:focus{
     background: #fff;
     border: 3px solid #EC6F66;
     outline: none;
+}
+
+span {
+    background: #EC6F66;    
+    color: white;
+    width: 0;
+    display: inline-block;
+    text-align: center;
+    height: 40px;
+    margin-right: 20px;
+    transition: 0.2s linear;
+}
+
+li:hover span{    
+    width: 40px;
 }
